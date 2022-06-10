@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cities",
+  "info": {
+    "singularName": "city",
+    "pluralName": "cities",
+    "displayName": "City",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "districts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::district.district",
+      "mappedBy": "city"
+    },
+    "managers": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::manager.manager",
+      "mappedBy": "cities"
+    }
+  }
+}

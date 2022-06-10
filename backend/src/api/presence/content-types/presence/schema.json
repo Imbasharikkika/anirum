@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "presences",
+  "info": {
+    "singularName": "presence",
+    "pluralName": "presences",
+    "displayName": "Presence",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "student": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::student.student",
+      "inversedBy": "presences"
+    },
+    "payment_lesson_status": {
+      "type": "boolean"
+    },
+    "payment_trial_status": {
+      "type": "boolean"
+    },
+    "day": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::day.day",
+      "inversedBy": "presences"
+    },
+    "price_lesson": {
+      "type": "integer"
+    },
+    "trial_price": {
+      "type": "integer"
+    },
+    "status": {
+      "type": "string"
+    }
+  }
+}

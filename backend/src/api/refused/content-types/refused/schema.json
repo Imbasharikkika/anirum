@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "refuseds",
+  "info": {
+    "singularName": "refused",
+    "pluralName": "refuseds",
+    "displayName": "Refused",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "student": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::student.student",
+      "inversedBy": "refuseds"
+    },
+    "group": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::group.group"
+    },
+    "note": {
+      "type": "richtext"
+    },
+    "status": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "kind": "collectionType",
+  "collectionName": "students",
+  "info": {
+    "singularName": "student",
+    "pluralName": "students",
+    "displayName": "Student",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "family": {
+      "type": "string"
+    },
+    "patronymic": {
+      "type": "string"
+    },
+    "age": {
+      "type": "date"
+    },
+    "city": {
+      "type": "string"
+    },
+    "district": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "phone_student": {
+      "type": "integer"
+    },
+    "parents_1": {
+      "type": "string"
+    },
+    "phone_parents_1": {
+      "type": "integer"
+    },
+    "parents_2": {
+      "type": "string"
+    },
+    "phone_parents_2": {
+      "type": "integer"
+    },
+    "level": {
+      "type": "string"
+    },
+    "note": {
+      "type": "richtext"
+    },
+    "budget": {
+      "type": "integer"
+    },
+    "days": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::day.day",
+      "mappedBy": "students"
+    },
+    "groups": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::group.group",
+      "mappedBy": "students"
+    },
+    "presences": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::presence.presence",
+      "mappedBy": "student"
+    },
+    "age_number": {
+      "type": "integer"
+    },
+    "refuseds": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::refused.refused",
+      "mappedBy": "student"
+    }
+  }
+}

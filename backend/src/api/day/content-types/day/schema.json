@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "days",
+  "info": {
+    "singularName": "day",
+    "pluralName": "days",
+    "displayName": "Day",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "date"
+    },
+    "students": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::student.student",
+      "inversedBy": "days"
+    },
+    "group": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::group.group",
+      "inversedBy": "days"
+    },
+    "price_lesson": {
+      "type": "integer"
+    },
+    "trial_price": {
+      "type": "integer"
+    },
+    "presences": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::presence.presence",
+      "mappedBy": "day"
+    }
+  }
+}

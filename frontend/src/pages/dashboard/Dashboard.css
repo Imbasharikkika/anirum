@@ -1,0 +1,185 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    border: 0.0625rem solid rgba(231,234,243,.7);
+    box-shadow: 0 0.375rem 0.75rem rgb(140 152 164 / 8%);
+    border-radius: 0.75rem;
+    width: calc(100vw - 290px);
+    
+}
+.text_dashboard {
+    font-family: 'Inter', sans-serif;
+    color: #1e2022!important;
+    list-style: none;
+    font-size: 14px;
+}
+.container_dashboard {
+    display: flex;
+    flex-direction: row;
+}
+.box_dashboard {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+}
+
+.box_dashboard_city {
+    width: 120px;
+}
+
+.box_dashboard_income {
+    width: 70px;
+    font-family: 'Inter', sans-serif;
+    color: #1e2022!important;
+    list-style: none;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+.text_dashboard_number {
+    width: 50px;
+}
+.card_header_dashboard {
+    display: flex;
+    padding: 1rem;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    border-bottom: 0.0625rem solid rgba(231,234,243,.7);
+
+}
+h4 {
+    font-size: .98438rem;
+}
+
+.box_dashboard_group {
+    display: flex;
+    flex-direction: row;
+}
+.flex_column {
+    flex-direction: column;
+}
+.flex_row {
+    display: flex;
+    flex-direction: row;
+}
+.flex_row2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.group_number {
+    font-family: 'Inter', sans-serif;
+    color: #1e2022!important;
+    list-style: none;
+    font-size: 14px;
+    display: flex;
+    padding: 1rem;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    border-bottom: 0.0625rem solid rgba(231,234,243,.7);
+}
+
+.group_number2 {
+    font-family: 'Inter', sans-serif;
+    color: #1e2022!important;
+    list-style: none;
+    font-size: 14px;
+    display: flex;
+    padding: 1rem;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+}
+
+.title_number_table {
+    width: 20px;
+    margin-left: 25px;
+}
+.title_number_table2 {
+    width: 30px;
+    margin-left: 10px;
+}
+.title_fio_table {
+    width: 290px;
+    margin-left: 10px;
+}
+
+.box_dashboard_table {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.title_fio_table2 {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    width: 290px;
+}
+.fio {
+    margin-left: 10px;
+    display: flex;
+    text-align: center;
+}
+
+.title_phone_table{
+    width: 100px;
+    margin-left: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+.title_age_table{
+    width: 70px;
+    font-size: 14px;
+    text-align: center;
+}
+.title_day_table{
+    width: 400px;
+    display: flex;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.table_day{
+    width: 60px;
+}
+.title_day_table2{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 350px;
+}
+.title_day_table3{
+    display: flex;
+    flex-direction: row;
+}
+.box_dashboard_table2 {
+    display: flex;
+    flex-direction: row;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 30px;
+    
+}
+.box_dashboard_table3 {
+    display: flex;
+    flex-direction: row;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 30px;
+    
+}
+
+.flex_column2 {
+    flex-direction: column;
+    display: flex;
+    width: 400px;
+}
+
+.status_presences {
+    width: 100px;
+    justify-content: center;
+    display: flex;
+}

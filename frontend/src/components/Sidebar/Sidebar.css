@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap');
+
+.box_sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+    height: calc(100vh - 50px);
+    
+}
+
+.box2_sidebar {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+    margin-top: 10%;
+}
+.container_sidebar {
+    display: flex;
+    height: 30px;
+    color: #787486;
+}
+
+.container_sidebar {
+    text-decoration: none;
+    color: #787486;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+}
