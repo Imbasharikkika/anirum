@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.99b80f84.css",
+    "main.js": "/static/js/main.67222b07.js",
+    "static/media/ANIRUM.png": "/static/media/ANIRUM.23d040aa378f762e8242.png",
+    "index.html": "/index.html",
+    "main.99b80f84.css.map": "/static/css/main.99b80f84.css.map",
+    "main.67222b07.js.map": "/static/js/main.67222b07.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.99b80f84.css",
+    "static/js/main.67222b07.js"
+  ]
+}
