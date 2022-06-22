@@ -22,12 +22,40 @@ const City = () => {
   if (!data) return null
   if (error) return <p>Error :(</p>
 
+  const month = moment().format('MMMM YYYY')
+
   
-  
+  const start = data.data.attributes.districts.data.map(x=>x.attributes.addresses.data.map(x=>x.attributes.offices.data.map(x=>x.attributes.groups.data.map(x=>x.attributes.start_day))))
+  const end = data.data.attributes.districts.data.map(x=>x.attributes.addresses.data.map(x=>x.attributes.offices.data.map(x=>x.attributes.groups.data.map(x=>x.attributes.end_day))))
+  const days = [];
+  let i = 0;
+
+  while (i < start.length) {
+      days.push(...start[i]);
+    i++;
+  }
+
+  const days2 = days.flat()
+  const days3 = days2.flat()
+  console.log(days3.sort((a, b)=> a - b))
   return (
     <div>  
 
-      <h1 className='page-header space-between'>{data.data.attributes.title}<Link as={Link} to={`/district/${id}` }><button className='button'>+ Добавить район</button></Link></h1> 
+      <h1 className='page-header space-between'>{data.data.attributes.title}
+      <div className="box_goup">
+            <select >
+                <option >{month}</option>
+                <option >Февраль</option>
+                <option >Март</option>
+                <option >Апрель</option>
+                <option >Май</option>
+            </select>
+      </div>
+      
+      <Link as={Link} to={`/district/${id}` }>
+        
+        
+        <button className='button'>+ Добавить район</button></Link></h1> 
       
       <div className='container_dashboard'>
           <div className='container_dashboard_box'>

@@ -5,7 +5,7 @@ import "./Header.css";
 
 const Header = () => {
   const { isAuth, user } = useContext(AuthContext);
-
+  const { logout } = useContext(AuthContext);
   return (
     <div className="box_header">
       <Link as={Link} to="/">
@@ -16,12 +16,10 @@ const Header = () => {
         {/* <Link as={Link} to="/">Home</Link> */}
 
         {isAuth && (
-          <div>
-            <div>{user?.username}</div>
-            <Link as={Link} to="/logout" className="item_header">
-              Выход
-            </Link>
-          </div>
+            <div className="item_header">{user?.username}</div>
+        )}
+        {isAuth && (
+            <a className="item_header logout" onClick={logout}>Выход</a>
         )}
 
         {!isAuth && (
